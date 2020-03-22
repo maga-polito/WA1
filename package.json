@@ -1,0 +1,16 @@
+{
+  "name": "wa1-project",
+  "version": "1.0.0",
+  "description": "polito wa1 activities",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Ana Pena",
+  "license": "ISC",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "npm": "^6.14.2",
+    "readline-sync": "^1.4.10"
+  }
+}
