@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Material icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="stylesheets/custom.css">
+  <link rel="icon" href="images/checklist.png">
+  </link>
+  <title>ToDo Taskmanager</title>
+</head>
+
+<body>
+  <header class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+    <div class="col-md-4 col-8">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#v-pills-tab" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="images/check.png" class="h-100 img-fluid bg-primary" style="width: 30px" alt="Responsive image">
+      <a class="navbar-brand bg-primary text-white" href="#!">ToDo Manager</a>
+    </div>
+    <div class="col-md-4 d-none d-md-inline">
+      <form class="form-inline">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+    <div class="col-md-4 col">
+      <span class="material-icons float-right img-fluid" style="color: white; width: 30px">
+        person_outline
+      </span>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row p-3 flex-nowrap">
+      <div class="row">
+        <div class="col-md-4 p-3 border-right">
+          
+          <div class="collapse navbar-collapse d-md-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <span>Filters</span>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">All</li>
+              <li class="list-group-item">Important</li>
+              <li class="list-group-item">Today</li>
+              <li class="list-group-item">Next 7 Days</li>
+              <li class="list-group-item">Shared With...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <span>All</span>
+          <div class="table-responsive">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><input type="checkbox" aria-label="completed"></th>
+                  <td>Do homework</td>
+                  <td><span class="badge badge-pill badge-secondary">Web Applications I</span></td>
+                  <td></td>
+                  <td>Friday 27 March 2020 at 11:30</td>
+                </tr>
+                <tr>
+                  <th scope="row"><input type="checkbox" aria-label="completed"></th>
+                  <td>Study CSS</td>
+                  <td><span class="badge badge-pill badge-secondary">Web Applications I</span></td>
+                  <td><span class="material-icons">people_outline</span></td>
+                  <td>Today at 14:00</td>
+                </tr>
+                <tr>
+                  <th scope="row"><input type="checkbox" aria-label="completed"></th>
+                  <td>Read a good book</td>
+                  <td><span class="badge badge-pill badge-info">Personal</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row"><input type="checkbox" id="important-checkbox" aria-label="completed"></th>
+                  <td>Stay safe and healthy at home</td>
+                  <td><span class="badge badge-pill badge-info">Personal</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a href="#" class="float bg-primary">
+            <i class="material-icons fa fa-plus my-float">add</i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

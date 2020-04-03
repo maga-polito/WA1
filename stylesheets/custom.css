@@ -1,0 +1,25 @@
+#important-checkbox{
+    outline: 1px solid #f00;
+    border-color: #f00;
+    color: #f00;
+    border: #f00;
+}
+
+*{padding:0;margin:0;}
+
+.float{
+    position:fixed;
+    width: 40px;
+    height: 40px;
+	bottom:30px;
+	right:30px;
+	color:#FFF;
+	border-radius:50px;
+    text-align:center;
+    font-size: 12px;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:8px;
+}
