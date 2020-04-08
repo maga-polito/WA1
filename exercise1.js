@@ -38,15 +38,3 @@ while(true){
     }
 }
 
-
-
-// readlineSync.promptCLLoop({
-//     add: function(element) {
-//       console.log(element + ' is added.');
-//     },
-//     copy: function(from, to) {
-//       console.log(from + ' is copied to ' + to + '.');
-//     },
-//     bye: function() { return true; }
-//   });
-//   console.log('It\'s exited from loop.');
