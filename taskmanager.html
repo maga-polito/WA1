@@ -32,11 +32,7 @@
       person_outline
     </span>
   </header>
-<<<<<<< HEAD
-
-=======
   <!-- Content of the page -->
->>>>>>> top-bar-test
   <div class="container-fluid">
     <div class="row p-3 flex-nowrap">
       <div class="row">
@@ -46,11 +42,11 @@
             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
               <span>Filters</span></h6>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item bg-secondary active">All</li>
-              <li class="list-group-item">Important</li>
-              <li class="list-group-item">Today</li>
-              <li class="list-group-item">Next 7 Days</li>
-              <li class="list-group-item">Shared With...</li>
+              <li class="list-group-item active" onclick="showAll()">All</li>
+              <li class="list-group-item" onclick="showUrgent()">Important</li>
+              <li class="list-group-item" onclick="showToday()">Today</li>
+              <li class="list-group-item" onclick="showNext()">Next 7 Days</li>
+              <li class="list-group-item" onclick="showShared()">Shared With...</li>
             </ul>
             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
               <span>Projects</span></h6>
@@ -64,16 +60,16 @@
         <main class="col">
           <h1>All</h1>
           <!-- Tasks List -->
-          <ul class="list-group list-group-flush" id="task-list">
-          </ul>
+          <div id="task-list">
+          </div>
           <a href="#" class="float bg-dark">
             <i class="material-icons fa fa-plus my-float">add</i>
           </a>
         </main>
       </div>
     </div>
-    <!-- Populate tasks list -->
-    <script src="populateTasks.js"></script>
+    <!-- dinamic tasks list -->
+    <script src="taskManager.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
