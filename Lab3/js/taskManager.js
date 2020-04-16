@@ -47,7 +47,7 @@ function generateList(data) {
         projectBadge.className = "badge badge-pill badge-secondary"
         projectBadge.innerText = el.project
         checkBox.type = "checkbox"
-        checkBox.value = el["description"]}
+        checkBox.value = el["description"]
         ul.appendChild(li)
         li.appendChild(checkBox);
         li.appendChild(label);
@@ -59,7 +59,7 @@ function generateList(data) {
         date.appendChild(document.createTextNode(el.deadline))
         li.appendChild(date)
         if (el.urgent) {
-            checkBox.id = "important-checkbox"
+            checkBox.className = "important-checkbox"
         }
     }
     list.appendChild(ul)
