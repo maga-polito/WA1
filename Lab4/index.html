@@ -62,16 +62,68 @@
           <!-- Tasks List -->
           <div id="task-list">
           </div>
-          <a href="#" class="float bg-dark">
+          <!-- Button Create new task -->
+          <a href="#" class="float bg-dark" data-toggle="modal" data-target="#addTaskModal">
             <i class="material-icons fa fa-plus my-float">add</i>
           </a>
+          <!-- Modal -->
+          <div class="modal fade" id="addTaskModal" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="taskModalTitle">Create a new task</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="taskDescriptionInput">Description</label>
+                      <input type="text" class="form-control" id="taskDescriptionInput" placeholder="Study JavaScript">
+                    </div>
+                    <div class="form-group">
+                      <div class="datetimepicker">
+                        <input type="date" id="date" value="2018-07-03">
+                        <span></span>
+                        <input type="time" id="time" value="08:00">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputProject">Project</label>
+                      <select class="form-control" id="inputProject">
+                        <option>Choose...</option>
+                        <option>WA1</option>
+                        <option>Personal</option>
+                      </select>
+                    </div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="importantSwitch">
+                      <label class="custom-control-label" for="importantSwitch">Important</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="privateSwitch">
+                      <label class="custom-control-label" for="privateSwitch">Private</label>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Create</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
     </div>
     <!-- dinamic tasks list -->
     <script src="js/taskManager.js"></script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"></script>

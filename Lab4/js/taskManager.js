@@ -1,32 +1,53 @@
 "use strict"
-const taskList = [{
-    description: "Do homework",
-    urgent: false,
-    project: "Web Applications I",
-    private: true,
-    deadline: "Monday 13 April 2020 at 11:30"
-},
-{
-    description: "Study CSS",
-    urgent: false,
-    project: "Web Applications I",
-    private: false,
-    deadline: "Today at 14:00"
-},
-{
-    description: "Read a good book",
-    urgent: false,
-    project: "Personal",
-    private: true,
-    deadline: "Yesterday at 14:00"
-},
-{
-    description: "Stay safe and healthy at home",
-    urgent: true,
-    project: "Personal",
-    private: true,
-    deadline: ""
-}]
+// const taskList = [{
+//     description: "Do homework",
+//     urgent: false,
+//     project: "Web Applications I",
+//     private: true,
+//     deadline: new Date('2020-04-23')
+// },
+// {
+//     description: "Study CSS",
+//     urgent: false,
+//     project: "Web Applications I",
+//     private: false,
+//     deadline: new Date()
+// },
+// {
+//     description: "Read a good book",
+//     urgent: false,
+//     project: "Personal",
+//     private: true,
+//     deadline: "Yesterday at 14:00"
+// },
+// {
+//     description: "Stay safe and healthy at home",
+//     urgent: true,
+//     project: "Personal",
+//     private: true,
+//     deadline: ""
+// }]
+//DatePicker
+let taskList = []
+const dateEl = document.getElementById('date');
+const timeEl = document.getElementById('time');
+const createTaskBtn = document.querySelector('.btn.btn-primary')
+const taskDescriptionInput = document.querySelector('#taskDescriptionInput')
+const importantInput = document.querySelector('#importantSwitch')
+const privateSwitchInput = document.querySelector('#privateSwitch')
+const projectInput = document.querySelector('#inputProject')
+const projectInputOptions = document.querySelectorAll('#inputState option')
+
+createTaskBtn.addEventListener('click', event => {
+          taskList.push({
+            description: taskDescriptionInput.value,
+            urgent: importantInput.value,
+            project: projectInput.value,
+            private: privateSwitchInput.value,
+            deadline: `${dateEl.value} ${timeEl.value}`
+        })
+})
+
 
 const all = document.getElementById('filter-all')
 const important = document.getElementById('filter-important')
